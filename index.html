@@ -62,14 +62,6 @@
             detectActiveResponsiveButton();
         }
 
-        if (jQuery.isReady) {
-            init(jQuery);
-        } else {
-            jQuery(function ($) {
-                init($);
-            });
-        }
-
         function setActiveResponsiveButton(btn) {
             $(".page-preview-header > a").removeClass("active");
             $(btn).addClass("active");
